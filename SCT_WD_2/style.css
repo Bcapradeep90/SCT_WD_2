@@ -1,0 +1,65 @@
+body {
+  background-image:url(watch.jpeg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.circle-wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #111137;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px 10px rgba(255, 180, 50, 0.2);
+  margin-bottom: 30px;
+}
+
+.timer {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.laps {
+  max-height: 200px;
+  overflow-y: auto;
+  width: 250px;
+  text-align: center;
+}
+
+.lap-item {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
